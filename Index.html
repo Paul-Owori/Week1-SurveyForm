@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SURVEY FORM</title>
+    <link rel="stylesheet" type="text/css" href="SurveyForm.css">
+  </head>
+  <body>
+    <section class="container">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        This is a sample survey form. All required fields are preceeded by *
+      </p>
+      <form class="" action="index.html" method="post" id="survey-form">
+        <div>
+        <label for="name">Name:* </label><input type="text" name="" value="" id="name-label" placeholder="Enter your names" required>
+        </div>
+        <br>
+        <div class="">
+          <label for="email">Email address:* </label><input type="email" value="" id="email-label" placeholder="Enter your email address" required>
+        </div>
+        <br>
+        <div class="">
+          <label for="number">Number:*</label><input type="text" id="number-label"  placeholder="Enter your number" pattern="[0-9]{10}">
+        </div>
+        <br>
+        <div class="">
+          <label for="options">Options : </label>
+          <input list = "options" id="dropdown"/>
+          <datalist id="options">
+           <option value="option1">
+           <option value="option2">
+           <option value="option3">
+           <option value="option3">
+          </datalist>
+        </div>
+        <br>
+        <p>
+          <h4>Choose a field:</h4>
+        </p>
+        <label for="field">Field 1 :</label><input type="radio" name="field" value="field1" id="field1">
+        <label for="field">Field 2 :</label><input type="radio" name="field" value="field2" id="field2">
+        <label for="field">Field 3 :</label><input type="radio" name="field" value="field3" id="field3">
+        <label for="field">Field 4 :</label><input type="radio" name="field" value="field4" id="field4">
+        <br>
+        <p>
+          <h4>Choose several checks:</h4>
+        </p>
+        <label for="Check1">Check1 :</label><input type="checkbox" name="Check1" value="Check1">
+        <label for="Check2">Check2 :</label><input type="checkbox" name="Check2" value="Check2">
+        <label for="Check3">Check3 :</label><input type="checkbox" name="Check3" value="Check3">
+        <label for="Check4">Check4 :</label><input type="checkbox" name="Check4" value="Check4">
+       <p>
+        <h3>Additional Comments</h3>
+       </p>
+       <textarea name="name" rows="8" cols="80"></textarea>
+       <p>
+         <h3>Submit</h3>
+       </p>
+       <input type="reset" value="Reset">     <input type="submit" value="Submit form">
+      </form>
+    </section>
+  </body>
+</html>
